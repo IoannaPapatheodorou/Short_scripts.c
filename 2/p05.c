@@ -1,20 +1,19 @@
-#include <stdio.h>
-#include <math.h>
+#include <stdio.h> 
+#include <math.h> 
+
 int main()
 {
-char k;
-int total  = 0;
+    char k;
+    int total;
 
-	while(scanf("%c", &k ) == 1 )
+    total=0;
+    while ( scanf("%c", &k) == 1 )
+    {
+        if ( k == 'C' )
+            {
+                total++;
+            }
+    }
 
-	{
-		if( k == 'c' || k == 'C' )
-		{
-		total++;
-		}
-
-	}
-printf("Total Ccs : %d\n", total );
-
+    printf("The number of cytosines in the sequence is %d\n", total);
 }
-

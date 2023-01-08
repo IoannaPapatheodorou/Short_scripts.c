@@ -1,21 +1,24 @@
-#include <stdio.h>
-#include <math.h>
+#include <stdio.h> 
+#include <math.h> 
+
 int main()
 {
-char k;
-float total  = 0, all = 0;
+    char    k;
+    float   total;
+    float   seq;
 
-	while(scanf("%c", &k ) == 1 )
+    total=0;
+    seq=0;
 
-	{
-		all++; 
-		if( k == 'c' || k == 'C' || k== 'g' || k == 'G' )
-		{
-			total++;
-		}
+    while ( (scanf("%c", &k) == 1))
+    {
+        if ( k == 'C'|| k == 'G'|| k == 'c'|| k == 'g' )
+            {
+                total++;
+            }
 
-	}
-	printf("Total CG percentage : %f\n", (100*total)/all );
+        seq++;
+    }
 
+    printf("The GC percentage is %f%%\n", 100*(total/seq) );
 }
-
