@@ -3,22 +3,20 @@
 
 int main()
 {
-    char    k;
-    float   total;
-    float   seq;
+char    k;
+float   total;
+float   seq;
 
-    total=0;
-    seq=0;
+total=0;
+seq=0;
 
     while ( (scanf("%c", &k) == 1))
     {
-        if ( k == 'C'|| k == 'G'|| k == 'c'|| k == 'g' )
+    if ( k == 'C'|| k == 'G'|| k == 'c'|| k == 'g' )
             {
-                total++;
+            total++;
             }
-
-        seq++;
+    seq++;
     }
-
-    printf("The GC percentage is %f%%\n", 100*(total/seq) );
+printf("The GC percentage is %f%%\n", 100*(total/seq) );
 }
