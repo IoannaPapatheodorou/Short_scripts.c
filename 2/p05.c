@@ -13,7 +13,7 @@ int main()
             {
                 total++;
             }
-    }
+     }
 
     printf("The number of cytosines in the sequence is %d\n", total);
 }
